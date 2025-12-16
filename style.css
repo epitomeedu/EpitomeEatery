@@ -14,9 +14,10 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Schoolbell', 'Playfair Display', serif;
   font-weight: 400;
 }
+
 
 a {
   text-decoration: none;
