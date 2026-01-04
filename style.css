@@ -64,7 +64,7 @@ a:hover {
    HERO SECTION
 ========================= */
 .hero {
-  height: 60vh;
+  height: 80vh;
   background-image: url("https://raw.githubusercontent.com/epitomeedu/epitomeeatery/a75482e377952dfcc8dcf14656c77d20b1687f6c/20211101_133136-01.jpeg");
   background-size: cover;
   background-position: center;
