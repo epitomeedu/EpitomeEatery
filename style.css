@@ -57,8 +57,36 @@ a:hover {
 }
 
 .nav-left a, .nav-right a {
-  font-weight: 500;
+  font-family: 'Schoolbell', 'Playfair Display', serif; /* same as headings */
+  font-weight: 400; /* matches heading weight */
+  text-decoration: none;
+  color: var(--charcoal);
+  font-size: 1rem; /* slightly larger than default 0.9rem */
+  margin: 0 0.5rem;
+  transition: color 0.2s ease;
 }
+
+.nav-left a:hover, .nav-right a:hover {
+  color: var(--olive);
+}
+
+/* =========================
+   RESPONSIVE NAV
+========================= */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-left, .nav-right {
+    justify-content: center;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
 
 /* =========================
    HERO SECTION
