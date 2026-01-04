@@ -92,10 +92,17 @@ a:hover {
 }
 
 .hero-content .hero-logo {
-  max-height: 150px;
+  max-height: 100px; /* smaller logo for desktop */
   width: auto;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+  .hero-content .hero-logo {
+    max-height: 70px; /* smaller on mobile */
+  }
+}
+
 
 .hero-content h1 {
   font-size: 3rem;
