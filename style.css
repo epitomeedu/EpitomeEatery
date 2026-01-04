@@ -51,23 +51,51 @@ a:hover {
   z-index: 1000;
 }
 
-.nav-left, .nav-right {
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  gap: 1rem;
+  justify-content: center; /* center all buttons */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(250, 247, 242, 0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
-.nav-left a, .nav-right a {
-  font-family: 'Schoolbell', 'Playfair Display', serif; /* same as headings */
-  font-weight: 400; /* matches heading weight */
+.nav-center {
+  display: flex;
+  gap: 1.5rem; /* space between buttons */
+}
+
+.nav-center a {
+  font-family: 'Schoolbell', 'Playfair Display', serif;
+  font-weight: 400;
   text-decoration: none;
   color: var(--charcoal);
-  font-size: 1rem; /* slightly larger than default 0.9rem */
-  margin: 0 0.5rem;
+  font-size: 1rem;
   transition: color 0.2s ease;
 }
 
-.nav-left a:hover, .nav-right a:hover {
+.nav-center a:hover {
   color: var(--olive);
+}
+
+/* =========================
+   RESPONSIVE NAV
+========================= */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-center {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
 }
 
 /* =========================
